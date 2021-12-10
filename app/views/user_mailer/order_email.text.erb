@@ -1,0 +1,15 @@
+Thank you for your order!
+===============================================
+
+The following order was placed successfully:
+
+<% @order.line_items.each do |i| %>
+  <%=i.product.name%>
+  <%=i.quantity%> @ <%= i.total_price %>
+
+<% end %>
+
+Grand Total: $ <%= @order.total %>
+
+Have an awesome day!
+- Your friends at Junglecorp Inc.

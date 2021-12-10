@@ -1,0 +1,25 @@
+<section class="sessions-show">
+
+  <header class="page-header">
+    <h1>
+      Login
+    </h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+    <%= form_tag '/login' do %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Email" %>
+      <br>
+      <br>
+      <%= password_field_tag :password, nil, class: "form-control", placeholder: "Password" %>
+      <br>
+      <br>
+      <%= submit_tag "Submit", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+</div>
+
+</section>
